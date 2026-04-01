@@ -1114,26 +1114,26 @@
         <div class="form-row">
           <div class="form-group">
             <label>First Name</label>
-            <input type="text" placeholder="John" required>
+            <input type="text" name="first_name" placeholder="John" required>
           </div>
           <div class="form-group">
             <label>Last Name</label>
-            <input type="text" placeholder="Smith" required>
+            <input type="text" name="last_name" placeholder="Smith" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="john@company.com" required>
+            <input type="email" name="email" placeholder="john@company.com" required>
           </div>
           <div class="form-group">
             <label>Company</label>
-            <input type="text" placeholder="Acme Corp">
+            <input type="text" name="company" placeholder="Acme Corp">
           </div>
         </div>
         <div class="form-group">
           <label>I'm interested in</label>
-          <select>
+          <select name="service">
             <option value="">Select a service...</option>
             <option>AI Implementation</option>
             <option>AI Strategy Consulting</option>
@@ -1143,7 +1143,7 @@
         </div>
         <div class="form-group">
           <label>Tell us about your business & goals</label>
-          <textarea placeholder="What's your biggest challenge or opportunity with AI right now?"></textarea>
+          <textarea name="message" placeholder="What's your biggest challenge or opportunity with AI right now?"></textarea>
         </div>
         <button type="submit" class="form-submit">Find Your Kairos →</button>
       </form>

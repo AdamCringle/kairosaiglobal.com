@@ -884,6 +884,132 @@
     font-size: 1.1rem;
     font-weight: 700;
   }
+
+  /* ── MOBILE RESPONSIVE ── */
+  @media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+      padding: 1rem 1.5rem;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-cta {
+      display: block;
+      padding: 0.5rem 1.2rem;
+      font-size: 0.85rem !important;
+    }
+
+    /* Hero */
+    #home {
+      padding: 7rem 1.5rem 6rem;
+      min-height: auto;
+    }
+
+    .hero-title {
+      font-size: 2.6rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.8rem;
+    }
+
+    .btn-primary, .btn-secondary {
+      text-align: center;
+      padding: 0.9rem 1.5rem;
+    }
+
+    .hero-stats {
+      position: static;
+      margin-top: 3rem;
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+
+    .stat-item { text-align: left; }
+
+    /* Sections */
+    section { padding: 4rem 1.5rem; }
+
+    .section-divider { margin: 0 1.5rem; }
+
+    /* Services */
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* About */
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .about-values {
+      grid-template-columns: 1fr;
+    }
+
+    .about-name {
+      font-size: 1.4rem;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+
+    /* Blog */
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-wrapper {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+      padding: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+      padding: 2rem 1.5rem;
+    }
+
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-title { font-size: 2rem; }
+    .section-title { font-size: 1.7rem; }
+    .hero-stats { gap: 1.5rem; }
+    .stat-num { font-size: 1.6rem; }
+    nav { padding: 1rem; }
+  }
 </style>
 </head>
 <body>

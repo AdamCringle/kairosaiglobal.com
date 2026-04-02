@@ -250,30 +250,7 @@
     border-color: rgba(99,179,255,0.3);
   }
 
-  .hero-stats {
-    position: absolute;
-    bottom: 4rem;
-    right: 4rem;
-    display: flex;
-    gap: 3rem;
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1s forwards;
-  }
 
-  .stat-item { text-align: right; }
-  .stat-num {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--white);
-    line-height: 1;
-  }
-  .stat-label {
-    font-size: 0.75rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
 
   /* ── SECTIONS ── */
   section { padding: 6rem 4rem; position: relative; }
@@ -930,14 +907,7 @@
       padding: 0.9rem 1.5rem;
     }
 
-    .hero-stats {
-      position: static;
-      margin-top: 3rem;
-      justify-content: flex-start;
-      gap: 2rem;
-    }
 
-    .stat-item { text-align: left; }
 
     /* Sections */
     section { padding: 4rem 1.5rem; }
@@ -1006,8 +976,7 @@
   @media (max-width: 480px) {
     .hero-title { font-size: 2rem; }
     .section-title { font-size: 1.7rem; }
-    .hero-stats { gap: 1.5rem; }
-    .stat-num { font-size: 1.6rem; }
+
     nav { padding: 1rem; }
   }
 </style>
@@ -1042,20 +1011,7 @@
       <a href="#services" class="btn-secondary">See Our Services</a>
     </div>
   </div>
-  <div class="hero-stats">
-    <div class="stat-item">
-      <div class="stat-num">2</div>
-      <div class="stat-label">Launch Clients</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">3</div>
-      <div class="stat-label">Core Services</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">NY</div>
-      <div class="stat-label">Based & Remote</div>
-    </div>
-  </div>
+
 </section>
 
 <div class="section-divider"></div>
